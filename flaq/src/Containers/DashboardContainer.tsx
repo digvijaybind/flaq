@@ -35,17 +35,15 @@ const DashboardContainer = () => {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.explore}>explore flaq</Text>
+
       <View style={styles.InternalContainer}>
         <ImageBackground
-          source={ImagesAssets.bannerList1}
+          source={ImagesAssets.Bluebackground}
           resizeMode="cover"
           style={styles.image}
         >
-          <Text>testdfvbnkiuy</Text>
-        </ImageBackground>
-        <Card containerStyle={styles.cardContainer}>
           <View style={styles.cardView}>
-            <View style={{ height: 51 }}></View>
+            <View style={{ height: 100 }}></View>
             <View>
               <Text style={styles.dive}>dive into web3</Text>
               <Text style={styles.learn}>
@@ -60,11 +58,15 @@ const DashboardContainer = () => {
               />
             </View>
           </View>
-        </Card>
+        </ImageBackground>
 
         <Text style={styles.CourseText}>course structure</Text>
 
-        <Card containerStyle={styles.cardContainer2}>
+        <ImageBackground
+          source={ImagesAssets.Redbackground}
+          resizeMode="cover"
+          style={styles.image}
+        >
           <View style={styles.cardView}>
             <View style={{ height: 51 }}></View>
             <View>
@@ -81,7 +83,7 @@ const DashboardContainer = () => {
               />
             </View>
           </View>
-        </Card>
+        </ImageBackground>
 
         <Card containerStyle={styles.cardContainer3}>
           <View></View>
@@ -103,25 +105,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#0D0D0D',
   },
   InternalContainer: {
-    marginTop: 24,
-    marginBottom: 24,
-    marginLeft: 24,
-    marginRight: 24,
+    // marginTop: 24,
+    // marginBottom: 24,
+    // marginLeft: 24,
+    // marginRight: 24,
+    // borderRadius: 10,
   },
   explore: {
-    color: '#fff',
-
-    fontSize: 18,
-    fontWeight: 'bold',
-
-    fontFamily: 'Montserrat',
-    fontStyle: 'normal',
-
-    display: 'flex',
-    alignItems: 'center',
-    marginTop: 90,
-    marginBottom: 24,
-    marginLeft: 24,
+    height: 19,
+    width: 114,
+    left: 24.5,
+    top: 90,
+    borderRadius: 0,
   },
   cardContainer: {
     backgroundColor: '#4A25B3',
@@ -155,6 +150,8 @@ const styles = StyleSheet.create({
   cardView: {
     justifyContent: 'space-between',
     flexDirection: 'column',
+    paddingTop: 10,
+    paddingLeft: 24,
   },
   dive: {
     color: '#fff',
@@ -213,7 +210,8 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     justifyContent: 'center',
-    height: 100,
+    borderRadius: 2,
+    height: 350,
   },
 })
 
