@@ -1,5 +1,6 @@
 import 'react-native-gesture-handler'
 import React from 'react'
+import { Text } from 'react-native'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/lib/integration/react'
 import { store, persistor } from '@/Store'
@@ -18,7 +19,8 @@ const App = () => (
      * @see https://github.com/rt2zz/redux-persist/blob/master/docs/PersistGate.md
      */}
     <PersistGate loading={null} persistor={persistor}>
-      <ApplicationNavigator />
+    <ApplicationNavigator />
+
     </PersistGate>
   </Provider>
   // </SafeAreaProvider>

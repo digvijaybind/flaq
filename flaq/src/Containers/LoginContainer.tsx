@@ -1,39 +1,9 @@
 import { Button } from '@rneui/base'
 import React, { useState, useEffect } from 'react'
 import { View, Text, TextInput, StyleSheet } from 'react-native'
-// import { useDispatch } from 'react-redux'
-// import { useTranslation } from 'react-i18next'
-
-// import { useTheme } from '@/Hooks'
-// import { useLazyFetchOneQuery } from '@/Services/modules/users'
-// import { changeTheme, ThemeState } from '@/Store/Theme'
 
 const LoginContainer = () => {
-  // const { t } = useTranslation()
-  // const { Common, Fonts, Gutters, Layout } = useTheme()
-  // const dispatch = useDispatch()
-
-  // const [userId, setUserId] = useState('9')
-  // const [fetchOne, { data, isSuccess, isLoading, isFetching, error }] =
-  // useLazyFetchOneQuery()
-
-  // useEffect(() => {
-  //   fetchOne(userId)
-  // }, [fetchOne, userId])
-
-  // const onChangeTheme = ({ theme, darkMode }: Partial<ThemeState>) => {
-  //   dispatch(changeTheme({ theme, darkMode }))
-  // }
-
   return (
-    // <ScrollView
-    //   style={Layout.fill}
-    //   contentContainerStyle={[
-    //     Layout.fill,
-    //     Layout.colCenter,
-    //     Gutters.smallHPadding,
-    //   ]}
-    // >
     <View style={styles.conatiner}>
       <Text style={styles.loginText}> login to flaq</Text>
       <Text style={styles.credText}> enter your credentials</Text>
@@ -65,7 +35,6 @@ const LoginContainer = () => {
         , and that you are over 18 years old
       </Text>
     </View>
-    // </ScrollView>
   )
 }
 
@@ -107,6 +76,10 @@ const styles = StyleSheet.create({
   buttonContainer: {
     backgroundColor: '#fff',
     marginTop: 21,
+
+    background: '#FFFFFF',
+    border: '2px solid #000000',
+    borderradius: '4px',
   },
   buttonStyles: {
     backgroundColor: '#fff',
